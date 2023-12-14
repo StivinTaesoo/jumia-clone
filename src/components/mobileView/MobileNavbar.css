@@ -1,0 +1,71 @@
+.MobileNavbar {
+    display: none;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.mobile-search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #fff;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.mobile-search-bar > input {
+    border: none;
+    outline: none;
+}
+
+.MobileMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 5px;
+    z-index: 100;
+}
+
+.ContactDetails {
+    display: none;
+    width: 100%;
+    background: #fae8ad;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.MobileMenuItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.MobileMenuItem__icon {
+    font-size: 24px;
+}
+.MobileMenuItem__tex {
+}
+
+@media (max-width: 600px) {
+    .MobileNavbar {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        gap: 5px;
+    }
+
+    .ContactDetails {
+        display: block;
+    }
+    .MobileMenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
